@@ -1,0 +1,78 @@
+# Debby000<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>home</title>
+    <link href="http://berjon.com/blog/2009/07/force-svg.html" rel="force-svg">
+    <script type="application/javascript">(function ()
+{
+  function ForceSVGInHTML()
+  {
+    window.removeEventListener("load", ForceSVGInHTML, true);
+    var svgs = document.getElementsByTagName("svg");
+    for (var i = 0; i < svgs.length; i++) {
+      var svg = svgs[i];
+      var div = document.createElement("div");
+      div.appendChild(svg.cloneNode(true));
+      var dom = (new DOMParser()).parseFromString(div.innerHTML, "application/xml");
+      svg.parentNode.replaceChild(document.importNode(dom.documentElement, true), svg);
+    }
+  }
+  window.addEventListener("load", ForceSVGInHTML, true);
+})();</script>
+    <style type="text/css">
+#a001 {  
+  background-image: url("new_%E7%AC%AC%E4%BA%94%E7%89%88/%E6%96%B0%E6%AA%9420150127/%E4%BB%8B%E9%9D%A2/old/%E4%BB%8B%E9%9D%A202.jpg");  
+  background-repeat: repeat;
+}
+
+</style></head>
+  <body>
+    <p><br>
+    </p>
+    <p>hihihi</p>
+    我的網頁喲<br>
+    <h3><span style="color: #33ccff;">美麗的花</span> </h3>
+    <h1><span style="color: #ffcc66;">可愛的花</span></h1>
+    <h1 style="background-color: #ccffff;"><span style="color: #cc66cc;">與眾不同的花～</span></h1>
+    <p><a target="_self" href="http://bluegriffon.org/">我的Facebook</a></p>
+    <p><br>
+    </p>
+    <p><a target="_self" href="http://bluegriffon.org/"><br>
+      </a></p>
+    <div style="text-align: left;"><img style="width: 406px; height: 242px;" title="代針筆"
+        alt="9989"
+        src="%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202015-05-24%2022.30.12.png"><svg
+        id="a001"
+        xmlns="http://www.w3.org/2000/svg"
+        height="480"
+        width="640">
+        <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+        <g>
+          <title>圖層 1</title>
+          <path id="svg_4" d="m308.679413,118.14209c44.882477,-128.76195 220.738068,0 0,165.554504c-220.735069,-165.554504 -44.882538,-294.316434 0,-165.554504z"
+            stroke-linecap="null"
+            stroke-linejoin="null"
+            stroke-width="5"
+            fill="#ffaaaa"></path>
+          <path id="svg_5" d="m309.778961,138.195023c32.112885,-93.322563 157.937653,0 0,119.984146c-157.937164,-119.984146 -32.112579,-213.306698 0,-119.984146z"
+            stroke-linecap="null"
+            stroke-linejoin="null"
+            stroke-width="5"
+            fill="#ff007f"></path>
+          <path id="svg_7" d="m308.212799,163.905731c19.585022,-49.699669 96.319183,0 0,63.898346c-96.316345,-63.898346 -19.582611,-113.598015 0,-63.898346z"
+            stroke-linecap="null"
+            stroke-linejoin="null"
+            stroke-width="5"
+            fill="#ffffff"></path>
+        </g>
+      </svg></div>
+    <p>hahaha</p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <h3>
+    </h3>
+  </body>
+</html>
